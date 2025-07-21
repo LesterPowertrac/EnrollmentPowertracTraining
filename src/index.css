@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.img-loaded {
+  @apply blur-none;
+}

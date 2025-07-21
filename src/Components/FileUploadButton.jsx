@@ -24,7 +24,7 @@ const FileUploadButton = ({
   };
 
   const variants = {
-    primary: "bg-blue-600 hover:bg-blue-700 text-white",
+    primary: "bg-teal-700 hover:bg-teal-800 text-white",
     secondary: "bg-gray-600 hover:bg-gray-700 text-white",
     success: "bg-green-600 hover:bg-green-700 text-white",
     danger: "bg-red-600 hover:bg-red-700 text-white",
@@ -43,7 +43,7 @@ const FileUploadButton = ({
       <button
         type="button"
         onClick={handleClick}
-        className={`rounded font-semibold transition duration-200 ${variants[variant]} ${sizes[size]}`}
+        className={`rounded font-semibold transition duration-200 cursor-pointer ${variants[variant]} ${sizes[size]}`}
       >
         {label}
       </button>

@@ -34,8 +34,8 @@ const Sidebar = ({ user }) => {
       <nav className='space-y-2'>
         <NavLink
           to='/enrollment-dashboard'
-          className='flex items-center gap-3 p-3 rounded hover:bg-indigo-500'
-          activeclassname='bg-indigo-500'
+          className='flex items-center gap-3 p-3 rounded hover:bg-teal-700'
+          activeclassname='bg-teal-700'
         >
           <FaHome /> Home
         </NavLink>
@@ -44,29 +44,29 @@ const Sidebar = ({ user }) => {
           <>
             <NavLink
               to='registered-students'
-              className='flex items-center gap-3 p-3 rounded hover:bg-indigo-500'
-              activeclassname='bg-indigo-500'
+              className='flex items-center gap-3 p-3 rounded hover:bg-teal-700'
+              activeclassname='bg-teal-700'
             >
               <FaThList /> Registered Students
             </NavLink> 
             <NavLink
               to='admin-course'
-              className='flex items-center gap-3 p-3 rounded hover:bg-indigo-500'
-              activeclassname='bg-indigo-500'
+              className='flex items-center gap-3 p-3 rounded hover:bg-teal-700'
+              activeclassname='bg-teal-700'
             >
               <FaUser /> Created Course
             </NavLink>           
             <NavLink
               to='enrollment-requests'
-              className='flex items-center gap-3 p-3 rounded hover:bg-indigo-500'
-              activeclassname='bg-indigo-500'
+              className='flex items-center gap-3 p-3 rounded hover:bg-teal-700'
+              activeclassname='bg-teal-700'
             >
               <FaThList /> Enrollment Requests
             </NavLink>
             <NavLink
               to='admin-certificates'
-              className='flex items-center gap-3 p-3 rounded hover:bg-indigo-500'
-              activeclassname='bg-indigo-500'
+              className='flex items-center gap-3 p-3 rounded hover:bg-teal-700'
+              activeclassname='bg-teal-700'
             >
               <FaThList /> Certificates
             </NavLink>            
@@ -75,15 +75,15 @@ const Sidebar = ({ user }) => {
           <>
             <NavLink
               to='available-courses'
-              className='flex items-center gap-3 p-3 rounded hover:bg-indigo-500'
-              activeclassname='bg-indigo-500'
+              className='flex items-center gap-3 p-3 rounded hover:bg-teal-700'
+              activeclassname='bg-teal-700'
             >
               <FaUser /> Available Courses
             </NavLink>
             <NavLink
               to='my-enrollments'
-              className='flex items-center gap-3 p-3 rounded hover:bg-indigo-500'
-              activeclassname='bg-indigo-500'
+              className='flex items-center gap-3 p-3 rounded hover:bg-teal-700'
+              activeclassname='bg-teal-700'
             >
               <FaThList /> My Enrollments
             </NavLink>

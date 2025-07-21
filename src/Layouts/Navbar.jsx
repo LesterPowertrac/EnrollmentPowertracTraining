@@ -83,8 +83,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-indigo-500 text-white p-4 flex justify-between items-center px-5 shadow-lg shadow-slate-500/70 fixed top-0 left-64 w-[calc(100%-16rem)] z-10">
-      <h1 className="text-xl font-bold">Dashboard</h1>
+    <nav className="bg-teal-700 text-white p-4 flex justify-between items-center px-5 shadow-lg shadow-slate-500/70 fixed top-0 left-64 w-[calc(100%-16rem)] z-10">
+      <h1 className="text-xl font-bold">POWERTRAC INC.</h1>
       <div className="flex items-center gap-4">
         {user?.role === 'admin' && (
           <span className="relative flex gap-4">

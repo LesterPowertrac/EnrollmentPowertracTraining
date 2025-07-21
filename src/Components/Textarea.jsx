@@ -10,7 +10,7 @@ const Textarea = ({ label, name, value, onChange, placeholder }) => {
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-teal-700 focus:outline-none"
         rows="4"
       />
     </div>

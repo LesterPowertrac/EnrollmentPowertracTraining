@@ -9,7 +9,7 @@ const Dropdown = ({ label, icon: Icon, options }) => {
     <div className="relative">
       {/* Dropdown Trigger */}
       <div
-        className={`flex items-center justify-between p-3 rounded cursor-pointer hover:bg-indigo-500 ${isOpen ? "bg-indigo-500" : ""}`}
+        className={`flex items-center justify-between p-3 rounded cursor-pointer hover:bg-teal-500 ${isOpen ? "bg-teal-500" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="flex items-center gap-3">
@@ -25,7 +25,7 @@ const Dropdown = ({ label, icon: Icon, options }) => {
             <Link
               key={index}
               to={option.path}
-              className="block px-4 py-2 hover:bg-indigo-500 text-black"
+              className="block px-4 py-2 hover:bg-teal-500 text-black"
             >
               {option.label}
             </Link>

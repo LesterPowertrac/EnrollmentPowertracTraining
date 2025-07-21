@@ -54,7 +54,7 @@ useEffect(() => {
   const data = filtered.map((s) => [
     <button
       onClick={() => navigate(`students/${s.id}`)}
-      className="text-left text-blue-600 hover:underline w-full"
+      className="text-left text-blue-600 hover:underline w-full cursor-pointer"
     >
       {s.name}
     </button>,

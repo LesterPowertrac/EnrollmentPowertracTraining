@@ -5,7 +5,7 @@ const Button = ({ text, onClick, type = "button", variant = "primary", size = "m
   
   // Color Variants
   const variants = {
-    primary: disabled ? "bg-gray-400 text-gray-700 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600 text-white cursor-pointer",
+    primary: disabled ? "bg-gray-400 text-gray-700 cursor-not-allowed" : "bg-teal-700 hover:bg-teal-800 text-white cursor-pointer",
     secondary: disabled ? "bg-gray-400 text-gray-700 cursor-not-allowed" : "bg-gray-500 hover:bg-gray-600 text-white cursor-pointer",
     success: disabled ? "bg-gray-400 text-gray-700 cursor-not-allowed" : "bg-green-600 hover:bg-green-700 text-white cursor-pointer",
     danger: disabled ? "bg-gray-400 text-gray-700 cursor-not-allowed" : "bg-red-500 hover:bg-red-600 text-white cursor-pointer",

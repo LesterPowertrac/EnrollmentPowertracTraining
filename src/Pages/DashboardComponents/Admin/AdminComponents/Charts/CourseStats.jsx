@@ -83,7 +83,7 @@ useEffect(() => {
             />
             <YAxis />
             <Tooltip />
-            <Bar dataKey="total" fill="#4f46e5" />
+            <Bar dataKey="total" fill="#0f766e" />
           </BarChart>
         </ResponsiveContainer>
       )}

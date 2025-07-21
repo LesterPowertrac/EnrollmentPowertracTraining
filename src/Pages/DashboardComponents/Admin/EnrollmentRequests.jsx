@@ -166,7 +166,7 @@ const fetchEnrollments = async () => {
         </select>
         <button
           onClick={resetFilters}
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800 cursor-pointer"
         >
           Reset Filters
         </button>
@@ -209,14 +209,14 @@ const fetchEnrollments = async () => {
         <button
           onClick={() => handleBulkAction('approve')}
           disabled={!selectedIds.length}
-          className="px-3 py-1 bg-green-600 text-white rounded mr-2 disabled:opacity-50"
+          className="px-3 py-1 bg-green-700 text-white rounded mr-2 disabled:opacity-50 cursor-pointer"
         >
           Approve Selected
         </button>
         <button
           onClick={() => handleBulkAction('reject')}
           disabled={!selectedIds.length}
-          className="px-3 py-1 bg-red-600 text-white rounded mr-2 disabled:opacity-50"
+          className="px-3 py-1 bg-red-600 text-white rounded mr-2 disabled:opacity-50 cursor-pointer"
         >
           Reject Selected
         </button>
@@ -273,7 +273,7 @@ const fetchEnrollments = async () => {
                   <td className="p-2">
                     <button
                       onClick={() => handleDelete(e.id)}
-                      className="text-gray-600 hover:text-red-600 hover:underline text-sm"
+                      className="text-gray-600 hover:text-red-600 hover:underline text-sm cursor-pointer"
                     >
                       Delete
                     </button>

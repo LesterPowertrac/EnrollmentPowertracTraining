@@ -12,7 +12,7 @@ const Input = ({ label, type = "text", name, value, onChange, placeholder, requi
         onChange={onChange}
         placeholder={placeholder}
         autoComplete="false"
-        className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-teal-700 focus:outline-none "
         required={required}
       />
     </div>

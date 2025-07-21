@@ -135,7 +135,7 @@ useEffect(() => {
         <textarea name="description" placeholder="Description" value={form.description} onChange={handleChange} className="border px-3 py-2 rounded w-full" />
 
         <div className="flex gap-3 mt-2">
-          <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+          <button type="submit" className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800 cursor-pointer">
             {editingCourse ? 'Update Course' : 'Create Course'}
           </button>
 
@@ -176,13 +176,13 @@ useEffect(() => {
                   <td className="p-2">
                     <button
                       onClick={() => handleEdit(course)}
-                      className="text-blue-500 hover:underline text-sm mr-3"
+                      className="text-blue-500 hover:underline text-sm mr-3 cursor-pointer"
                     >
                       Edit
                     </button>
                     <button
                       onClick={() => handleDelete(course.id)}
-                      className="text-red-500 hover:underline text-sm"
+                      className="text-red-500 hover:underline text-sm cursor-pointer"
                     >
                       Delete
                     </button>

@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview", 
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d dist" 
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.3.0",
@@ -37,4 +39,5 @@
     "tailwindcss": "^4.1.11",
     "vite": "^7.0.0"
   }
+  
 }

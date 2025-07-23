@@ -1,7 +1,9 @@
 import {
-  createBrowserRouter,
+  // createBrowserRouter, <--- for deployment
+  createHashRouter, // <--- palitan soon ng createBrowserRouter pag dedeploy sa bluehost
   RouterProvider,
 } from 'react-router-dom';
+
 import { lazy } from 'react';
 
 // Layouts
@@ -28,7 +30,7 @@ import RegisteredStudents from '../Pages/DashboardComponents/Admin/RegisteredStu
 import TrashedStudents from '../Pages/DashboardComponents/Admin/TrashedStudents';
 import StudentsData from '../Pages/DashboardComponents/Admin/StudentsData';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/login',
     element: <Guestlayout />,

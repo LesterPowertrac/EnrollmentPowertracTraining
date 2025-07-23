@@ -9,7 +9,18 @@ const StudentsData = () => {
   const [loading, setLoading] = useState(true);
   
 useEffect(() => {
-  const channel = echo.channel('students'); // ✅ Correct
+  // Initial fetch
+  axios.get(`/api/students/${id}`)
+    .then(res => {
+      setStudent(res.data);
+      setLoading(false); // ✅ Done loading
+    })
+    .catch(err => {
+      console.error('Failed to fetch student data', err);
+      setLoading(false); // ✅ Stop loading even on error
+    });
+
+  const channel = echo.channel('students');
 
   const handleStudentChange = (e) => {
     if (e.student?.id === parseInt(id)) {
@@ -17,18 +28,25 @@ useEffect(() => {
         setStudent(null);
       } else {
         axios.get(`/api/students/${id}`)
-          .then(res => setStudent(res.data))
-          .catch(err => console.error('Failed to update student view', err));
+          .then(res => {
+            setStudent(res.data);
+            setLoading(false); // ✅ Ensure it's not stuck
+          })
+          .catch(err => {
+            console.error('Failed to update student view', err);
+            setLoading(false);
+          });
       }
     }
   };
 
-  channel.listen('.StudentChanged', handleStudentChange); // ✅ Listen on the channel
+  channel.listen('.StudentChanged', handleStudentChange);
 
   return () => {
-    echo.leaveChannel('students'); // ✅ Clean up
+    echo.leaveChannel('students');
   };
 }, [id]);
+
 
 
 

@@ -30,7 +30,7 @@ import StudentsData from '../Pages/DashboardComponents/Admin/StudentsData';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/login',
     element: <Guestlayout />,
     children: [
       {
